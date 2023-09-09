@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+   <title>StarWars Fans Form</title>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Star Wars Fan Survey Form</h1>
+    <p id="description"> Please fill this suvery collecting data about Star Wars fans </p>
+    <form id="survey-form">
+     <fieldset class="q">
+      <label for="name" id="name-label"> Name 
+        <input
+        id="name" 
+        type="text"
+        placeholder="eg. John" 
+        required
+        /> 
+      </label>
+      <label for="email" id="email-label"> Email 
+       <input id="email" 
+         type="email"
+         placeholder="eg. xyz@gmail.com" 
+         required />
+       <label id="number-label"> Age (optional) <input id="number" type="number" max="100" min="7" placeholder="age"/>
+</fieldset>
+        
+        <fieldset class="q">
+          <p> When did you see Star Wars movie for the first time? </p>
+
+         <label for="kid"> <input id="kid" type="radio" name="age" value="kid"/> As a kid </label>
+         <label for="teenager"><input id="teenager" type="radio" name="age"value="teen"/> As a teenager </label>
+         <label for="adult"> <input id="adult" type="radio" name="age" value="adult"/> As an adult </label>
+       </fieldset>
+
+<fieldset class="q">
+  <p> What are your favourtie Star Wars movies? </p>
+<label for="Episode I" name="I" > <input id="I" type="checkbox"  value="1"/> Episode I – The Phantom Menace </label>
+<label for="Episode II" name="II"> <input id="II" type="checkbox"  value="2"/> Episode II – Attack of the Clones </label>
+<label for="Episode III" name="III"> <input id="III" type="checkbox"  value="3"/> Episode III – Revenge of the Sith </label>
+<label for="Episode IV" name="IV"> <input id="IV" type="checkbox"  value="4"/> Episode IV – A New Hope </label>
+<label for="Episode V" name="V"> <input id="V" type="checkbox"  value="5"/> Episode V – The Empire Strikes Back </label>
+<label for="Episode VI" name="VI"> <input id="VI" type="checkbox"  value="6"/> Episode VI – Return of the Jedi </label>
+</fieldset>
+
+<fieldset class="q">
+<p> What is your least favourtie Star Wars movie? </p>
+<label for="Episode I"> <input id="I" type="radio" name="least" value="1"/> Episode I – The Phantom Menace </label>
+<label for="Episode II"> <input id="II" type="radio" name="least" value="2"/> Episode II – Attack of the Clones </label>
+<label for="Episode III"> <input id="III" type="radio" name="least" value="3" /> Episode III – Revenge of the Sith </label>
+<label for="Episode IV"> <input id="IV" type="radio" name="least" value="4"/> Episode IV – A New Hope </label>
+<label for="Episode V"> <input id="V" type="radio" name="least" value="5"/> Episode V – The Empire Strikes Back </label>
+<label for="Episode VI" > <input id="VI" type="radio" name="least" value="6"/> Episode VI – Return of the Jedi </label>
+</fieldset>
+
+<fieldset class="q">
+<p> What is your opinion about newest Star Wars movies?</p>
+
+  <label for="really"> <input id="Very" type="radio" value="really" name="opinion" value="1"/> I really like it </label>
+  <label for="like"> <input id="Like" type="radio" name="opinion" value="2"/> I  like it </label>
+  <label for="ok"> <input id="ok" type="radio" name="opinion" value="3"/> It's ok </label>
+  <label for="dont"> <input id="dont" type="radio" name="opinion" value="4"/> I don't like it </label>
+  <label for="yet" > <input id="yet" type="radio" name="opinion" value="5"/> I have not watch it yet</label>  
+</fieldset>
+
+<fieldset class="q">
+ <p> What character would you like to see the most in the upcoming Star Wars series?</p>
+<textarea id="text" rows="3" cols="40">
+  </textarea>
+</fieldset>
+
+<fieldset>
+ <label for="referrer" id="referrer-label">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option disabled selected value>(select one)</option>
+            <option value="fb">Facebook</option>
+            <option value="yt">YouTube Channel</option>
+            <option value="sw"> Star Wars Forum</option>
+            <option value="oth">Other</option>
+          </select>
+        </label>
+        </fieldset>
+
+<input type="submit" value="Submit" id="submit"/>
+        </form>
+      </body>
+      </html>
